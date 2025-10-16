@@ -1,0 +1,27 @@
+{
+  "name": "ai-job-application-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered job application automation platform",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "dev:api": "cd apps/api && poetry run uvicorn main:app --reload",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "type-check": "pnpm --filter web type-check",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "test": "pnpm --filter web test"
+  },
+  "keywords": [
+    "job-application",
+    "ai",
+    "cv-generator",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
